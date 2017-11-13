@@ -30,13 +30,13 @@ function Pagination ({ pagesCount, currentPage, changePage }) {
                         <a id="1" className="page-link" onClick={changePage} >{'<<'}</a>
                     </li>
                     <li className="page-item">
-                        <a id={previous} className="page-link" onClick={changePage} >Предыдущая</a>
+                        <a id={previous} className="page-link" onClick={changePage} >Previous</a>
                     </li>
                         {pages.map((page, idx) => (
                             <li key={idx} className={active(page)}><a id={page} className="page-link" onClick={changePage}>{page}</a></li>
                         ))}                    
                     <li className="page-item">
-                        <a id={next} className="page-link" onClick={changePage} >Следующая</a>
+                        <a id={next} className="page-link" onClick={changePage} >Next</a>
                     </li>
                 </ul>
             </nav>
